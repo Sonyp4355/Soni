@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soni Pathak</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto+Condensed&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(49, 6, 46);
+        color: rgb(249, 244, 239);
+        font: Belanosima;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(63, 7, 74);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: space-around;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: antiquewhite;
+    }
+
+    nav ul li a :hover {
+        color: crimson
+    }
+
+    main hr {
+        border: 0;
+        background: rgb(214, 109, 214);
+        height: 1.2px;
+        margin: 30px 40px;
+    }
+
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 90px 0;
+    }
+
+    .firstsection>div {
+        width: 40%;
+    }
+
+    .leftsection {
+        font-size: 2rem;
+    }
+
+    .image_wrap img {
+        width: 40%;
+        border-radius: 50%;
+        display: inline-block;
+
+    }
+    .image_wrap .main {
+        position: relative;
+         
+
+    }
+
+    .purple {
+        color: rgb(223, 216, 19);
+    }
+
+    .text-gray {
+        color: gray;
+    }
+
+    #element {
+        color: rgb(223, 216, 19);
+    }
+
+    .secondsection {
+        max-width: 90vw;
+        margin: auto;
+        height: 300px;
+    }
+
+    footer {
+        padding: 50px;
+        background: #2e152c;
+        cursor: pointer;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer .footer-rights {
+        text-align: center;
+        margin: 50px;
+        color: seagreen;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <h1>SONI</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="/">
+                            <Home class="html"><u>Home</u></Home>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Soni resume.docx">
+                            <About class="html"><u>Resume</u></About>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <Contact class="html"><u>Contact</u></Contact>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <Services class="html"><u>Services</u></Services>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My name is <span class="purple">SONI</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+            </div>
+            <div class="image_wrap">
+                <img src="soni1 img.jpg" alt="not found">
+                <div class="main" data-image-url="soni1 img.jpg"></div>
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">Projects I have done on my own</span>
+            <h1>Past Experience</h1>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">Soni's portfolio</div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.sonisportfolio.com | All rights are reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer', 'and graphic designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
